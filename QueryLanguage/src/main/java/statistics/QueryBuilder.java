@@ -47,8 +47,8 @@ public class QueryBuilder {
     }
 
     public Matcher build() {
-        int matchSize = this.matchers.size();
-        Matcher match = new And(matchers.toArray(new Matcher[matchSize]));
+        int matchKoko = this.matchers.size();
+        Matcher match = new And(matchers.toArray(new Matcher[matchKoko]));
         this.matchers.clear();
         return match;
     }
